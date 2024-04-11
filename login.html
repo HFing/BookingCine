@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="logincss.css">
     <title>Modern Login Page | AsmrProg</title>
 </head>
 
 <body>
-
+    <a href="index.html" style="position: absolute; top: 10px; left: 10px; text-decoration: none;">
+        <i class="fas fa-home" style="padding: 10px; background-color: #fff; border-radius: 50%; color: #000; font-size: 24px;"></i>
+    </a>
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
@@ -23,6 +26,7 @@
                 </div>
                 <span>or use your email for registeration</span>
                 <input type="text" placeholder="Name">
+                <input type="text" placeholder="CCCD" pattern="\d{12}" title="Vui lòng nhập vào 12 số">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <button>Sign Up</button>

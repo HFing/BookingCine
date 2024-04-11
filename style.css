@@ -313,13 +313,13 @@ a {
     padding-left: 10px;
 }
 
-.top .watch,
+.top .bookticket,
 .top .queue {
     padding: 10px 25px;
     border-radius: 8px;
 }
 
-.watch {
+.bookticket {
     color: white;
     display: flex;
     background-color: var(--red);
@@ -332,7 +332,7 @@ a {
     margin-left: 30px;
 }
 
-.watch:hover {
+.bookticket:hover {
     background-color: var(--red-selected);
     cursor: pointer;
 }
@@ -609,7 +609,7 @@ a {
     border: 2px solid #878585;
 }
 
-.card .watch {
+.card .bookticket {
     padding: 7px;
     border-radius: 50px;
     border: 2px solid var(--red);
@@ -860,7 +860,7 @@ a {
         min-width: 20px;
     }
 
-    .top .watch,
+    .top .bookticket,
     .top .queue {
         padding: 7px 20px;
     }
@@ -1088,7 +1088,7 @@ a {
     }
 
     .card .queue,
-    .card .watch,
+    .card .bookticket,
     .card .star {
         padding: 4px;
     }

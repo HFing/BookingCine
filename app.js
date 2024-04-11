@@ -273,36 +273,37 @@ const AddCards = () => {
             button_container.classList.add("button-container");
 
             let button1 = document.createElement("div");
+            button1.innerHTML = `<p>Book Ticket</p>`;
             button1.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
   <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 </svg>`;
-            button1.classList.add("watch");
+            button1.classList.add("bookticket");
 
             let button2 = document.createElement("div");
-            button2.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</svg>`;
-            button2.classList.add("queue");
+//             button2.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
+//   <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+//   <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+// </svg>`;
+            // button2.classList.add("queue");
 
-            button2.addEventListener("click", function () {
-                ToggleWatchLater(`${chosen_card.title}`);
-            });
+            // button2.addEventListener("click", function () {
+            //     ToggleWatchLater(`${chosen_card.title}`);
+            // });
 
             let button3 = document.createElement("div");
-            button3.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>`;
-            button3.classList.add("star");
-            button3.classList.add("queue");
+//             button3.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
+//   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+// </svg>`;
+            //button3.classList.add("star");
+            // button3.classList.add("queue");
 
-            button3.addEventListener("click", function () {
-                if (button3.children[0].style.color != "rgb(255, 255, 87)") {
-                    button3.children[0].style.color = "rgb(255, 255, 87)";
-                } else {
-                    button3.children[0].style.color = "white";
-                }
-            });
+            // button3.addEventListener("click", function () {
+            //     if (button3.children[0].style.color != "rgb(255, 255, 87)") {
+            //         button3.children[0].style.color = "rgb(255, 255, 87)";
+            //     } else {
+            //         button3.children[0].style.color = "white";
+            //     }
+            // });
 
             let button4 = document.createElement("div");
             button4.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
@@ -310,7 +311,7 @@ const AddCards = () => {
   <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
 </svg>`;
             button4.classList.add("star");
-            button4.classList.add("queue");
+            // button4.classList.add("queue");
 
             button4.addEventListener("click", function () {
                 if (document.getElementsByClassName("movie-desc").length > 0) {
@@ -349,20 +350,14 @@ const AddCards = () => {
                     let btn_selection = document.createElement("div");
                     btn_selection.classList.add("button-selection");
                     btn_selection.innerHTML = `
-                        <div class="watch">
-                            <h3>Play</h3>
+                        <div class="bookticket">
+                            <h3>Book Ticket</h3>
                             <svg fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                 <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
                             </svg>
-                        </div>
-                        <div class="queue" onclick="ToggleWatchLater('${chosen_card.title}');">
-                            <h3>Watch Later</h3>
-                            <svg fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                            </svg>
                         </div>`;
+                        
 
                     top_info.append(title, btn_selection);
 
@@ -609,7 +604,10 @@ const ToggleWatchLater = (movie = "", activate = true) => {
         modal.style.display = "none";
     }
 };
-//
+
+
+
+// js login
 const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
