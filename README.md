@@ -1,6 +1,6 @@
 # Booking Cine
-<space>Font - End: Updating<space>
-<space>Code With: HTML, CSS, JAVASCRIP<space>
+<space>Font - End: Updating
+<space>Code With: HTML, CSS, JAVASCRIP
 <space>Back - End: Updating<space>
 <space>Edit and Custom by HFing<space>
 <space>My Team:<space>
